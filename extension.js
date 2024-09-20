@@ -14,15 +14,49 @@ const Indicator = GObject.registerClass(
 class Indicator extends PanelMenu.Button {
     _init() {
         super._init(0.0, _('Focus Extension'));
+        const work_path = "dialog-information"
+        const pro_path = "edit-undo"
+        const break_path = "view-refresh"
 
-        this.add_child(new St.Icon({
-            icon_name: 'face-smile-symbolic',
-            style_class: 'system-status-icon',
-        }));
+        const work_icon = new St.Icon({
+            icon_name:work_path,
+            style_class:"work_icon"
+        })
+
+        const pro_icon = new St.Icon({
+            icon_name:pro_path,
+            style_class:"pro_icon"
+        })
+
+        const break_icon = new St.Icon({
+            icon_name:break_path,
+            style_class:"break_icon"
+        })
+
+        let current_icon;
+        const current_status = globalSettings.get_string('current-status')
+        if (current_status == 'break'){
+            current_icon = break_icon
+        } else if (current_status == 'procrastinate') {
+            current_icon = pro_icon
+        } else {
+            current_icon = break_icon
+        }
+        
+
+        // print()
+        
+        this.add_child(current_icon)
+        // this.add_child(new St.Icon({
+        //     icon_name: 'face-smile-symbolic',
+        //     style_class: 'system-status-icon',
+        //     // icon_path: '/path/to/your/custom-icon.svg', // Specify the path to your custom icon
+        // }));
         
 
         let item = new PopupMenu.PopupMenuItem(_('Show Notification'));
         item.connect('activate', () => {
+            console.log(globalSettings.get_string('current-status'))
             console.log(globalSettings.get_value('show-indicator').deepUnpack())
             Main.notify(_('Whatʼs up, folks?'), "How are you");
         });
@@ -37,7 +71,7 @@ export default class IndicatorExampleExtension extends Extension {
     enable() {
         this._settings = this.getSettings('org.gnome.shell.extensions.focus');
         globalSettings = this._settings
-        this._indicator = new Indicator();
+        this._indicator = new Indicator(this);
         Main.panel.addToStatusArea(this.uuid, this._indicator);
     }
 

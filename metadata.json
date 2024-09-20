@@ -1,0 +1,9 @@
+{
+  "name": "Focus",
+  "description": "Focus App",
+  "uuid": "focus@arjithar8.example.com",
+  "shell-version": [
+    "46"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.focus"
+}

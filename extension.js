@@ -13,17 +13,17 @@ let globalSettings;
 const Indicator = GObject.registerClass(
 class Indicator extends PanelMenu.Button {
     _init() {
-        // print(this._settings)
-        super._init(0.0, _('My Shiny Indicator'));
+        super._init(0.0, _('Focus Extension'));
 
         this.add_child(new St.Icon({
             icon_name: 'face-smile-symbolic',
             style_class: 'system-status-icon',
         }));
+        
 
         let item = new PopupMenu.PopupMenuItem(_('Show Notification'));
         item.connect('activate', () => {
-            console.log(globalSettings)
+            console.log(globalSettings.get_value('show-indicator').deepUnpack())
             Main.notify(_('Whatʼs up, folks?'), "How are you");
         });
         this.menu.addMenuItem(item);
@@ -31,6 +31,9 @@ class Indicator extends PanelMenu.Button {
 });
 
 export default class IndicatorExampleExtension extends Extension {
+    init(){
+        console.log(this._settings)
+    }
     enable() {
         this._settings = this.getSettings('org.gnome.shell.extensions.focus');
         globalSettings = this._settings

@@ -70,6 +70,8 @@ class Indicator extends PanelMenu.Button {
             console.log("Hellooooo");
             // Here aliases wont work( aliases as in created using bashrc but you can have .sh files)
             GLib.spawn_command_line_async("notify-send 'Hello, World!' 'This is a simple notification.'");
+            globalSettings.set_string('current-status', 'work')
+            console.log("Hellooooo");
         });
         this.menu.addMenuItem(item1);
         this.menu.addMenuItem(item2)
@@ -85,7 +87,7 @@ export default class IndicatorExampleExtension extends Extension {
     enable() {
         this._settings = this.getSettings('org.gnome.shell.extensions.focus');
         globalSettings = this._settings
-        this._indicator = new Indicator(this);
+        this._indicator = new Indicator(this._settings);
         Main.panel.addToStatusArea(this.uuid, this._indicator);
     }
 

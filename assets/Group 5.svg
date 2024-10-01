@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="4" width="192" height="192" rx="96" stroke="white" stroke-width="8"/>
+<rect x="64.8" y="20.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="51.2" y="28.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="39.2" y="39.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="28.8" y="51.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="22.4" y="64.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="16" y="80" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="14.4" y="95.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="16" y="112" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="20.8" y="127.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="28.8" y="142.4" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="80" y="16.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="80" y="16.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="96" y="14.4" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="111.2" y="16.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="126.4" y="20.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="140" y="28.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="152.8" y="39.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="163.2" y="51.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="171.2" y="64.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="175.2" y="80" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="176.8" y="95.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="175.2" y="112" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="171.2" y="127.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="163.2" y="140.8" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="152.8" y="152" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="141.6" y="163.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="126.4" y="171.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="111.2" y="175.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="96" y="177.6" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="80" y="175.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="64" y="171.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="64.8" y="171.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="51.2" y="163.2" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<rect x="39.2" y="152" width="8" height="8" rx="4" fill="#D9D9D9"/>
+<path d="M73.1477 147V53.9091H105.693C112.178 53.9091 117.527 55.0303 121.739 57.2727C125.951 59.4848 129.087 62.4697 131.148 66.2273C133.208 69.9545 134.239 74.0909 134.239 78.6364C134.239 82.6364 133.527 85.9394 132.102 88.5455C130.708 91.1515 128.86 93.2121 126.557 94.7273C124.284 96.2424 121.814 97.3636 119.148 98.0909V99C121.996 99.1818 124.86 100.182 127.739 102C130.617 103.818 133.027 106.424 134.966 109.818C136.905 113.212 137.875 117.364 137.875 122.273C137.875 126.939 136.814 131.136 134.693 134.864C132.572 138.591 129.223 141.545 124.648 143.727C120.072 145.909 114.117 147 106.784 147H73.1477ZM84.4205 137H106.784C114.148 137 119.375 135.576 122.466 132.727C125.587 129.848 127.148 126.364 127.148 122.273C127.148 119.121 126.345 116.212 124.739 113.545C123.133 110.848 120.845 108.697 117.875 107.091C114.905 105.455 111.39 104.636 107.33 104.636H84.4205V137ZM84.4205 94.8182H105.33C108.723 94.8182 111.784 94.1515 114.511 92.8182C117.269 91.4848 119.451 89.6061 121.057 87.1818C122.693 84.7576 123.511 81.9091 123.511 78.6364C123.511 74.5455 122.087 71.0758 119.239 68.2273C116.39 65.3485 111.875 63.9091 105.693 63.9091H84.4205V94.8182Z" fill="white"/>
+</svg>
